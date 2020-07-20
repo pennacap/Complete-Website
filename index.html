@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bombay Scottish School | Mahim</title>
+        <meta author="Aarav Malani" charset="utf-8" />
+        <link type="text/css" rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <nav id="nav">
+            <a href="#">
+                <button id="navbutton">Home</button>
+            </a>
+            <a href="#">
+                <button id="navbutton">About</button>
+            </a>
+            <a href="#">
+                <button id="navbutton">Contact Us</button>
+            </a>
+	    <a href="#"><!--Change This To test.php is you can run PHP code--> 
+                <button id="navbutton">Login</button>
+            </a>
+            
+        </nav>
+        <div id="title">
+
+            <h1 id="marquee">Bombay Scottish School</h1>
+        </div>
+        <br />
+        <div class="parallax">
+		<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="img_nature_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="img_snow_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="img_mountains_wide.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+        </div>
+        <program>Facilities</program>
+        <br /><hr /><br />
+        
+        <p>These are the school's facilities</p>
+        <div class="flex-container">
+            <div class="flexbox">
+                
+                <flex>Science Labs</flex>
+                <br />
+                <img src="Trex.png" id="imgs" />
+                <br />
+		There are three science laboratories viz. Physics laboratory, Chemistry laboratory and Biology laboratory. The laboratories are equipped with apparatus, models, chemicals and organic specimens for scientific research and development.
+                <!--<button id="trexBtn">Open Game</button>
+
+                
+                <div id="trexModal" class="trexModal">
+
+                    
+                    <div class="trexModal-content">
+                        <span class="trexClose">&times;</span>
+                        <embed width="432" height="757" style="border: 0px;" src="https://studio.code.org/projects/gamelab/2KZgT-4freLgl4Jd1dPtdmxzWtYE6uuCTGHZYedn61k/embed" />
+                    </div>
+                    
+                </div>-->
+            </div>
+	   <div class="flexbox">
+                
+                <flex>Multipurpose Room</flex><br />
+                <img src="Ghost.png" id="imgs" /><br />
+		The multipurpose room is used for various purposes such as art, crafts, drama, SUPW and quizzing.
+
+                <!--<button id="ghostBtn">Open Game</button>
+
+                    <div id="ghostModal" class="ghostModal">
+
+                    
+                    <div class="ghostModal-content">
+                        <span class="ghostClose">&times;</span>
+                        <embed width="432" height="757" style="border: 0px;" src="https://studio.code.org/projects/gamelab/EmzDRa0fzNbE--4-BufeROHOtZt8rRKfLF_5g-lY9MA/embed" />
+                    </div>
+                    
+                </div>-->
+            </div>
+            <div class="flexbox">
+                
+                <flex>Andrews Hall</flex><br />
+                <img src="Ghost.png" id="imgs" /><br />
+The Andrew’s Hall, built to commemorate the 150th year of the school, was inaugurated by then Governor of Mumbai, Dr. P.C. Alexander. The morning assemblies, PT classes and after school co-curricular activities are held in this open-aired hall.
+
+                
+<!--<button id="ghostAIBtn">Open Game</button>
+
+                
+                <div id="ghostAIModal" class="ghostAIModal">
+
+                    
+                    <div class="ghostAIModal-content">
+                        <span class="ghostAIClose">&times;</span>
+                        <embed width="432" height="757" style="border: 0px;" src="https://pennacap.github.io/Ghosts-On-The-Train-Tracks-NO-NEED-TO-MOVE/" />
+                    </div>
+                    
+                </div>-->
+            </div>
+            <div class="flexbox">
+                
+                <flex>Gamaliel Hall</flex><br />
+                <img src="AngryF.png" id="imgs" /><br />
+                The Gamaliel Hall is named after our longest serving Principal, the Late Mr. Lazarus Gamaliel. It serves as a multimedia centre with professional lighting and sound. The daily morning assemblies, the Inter-House Competitions, seminars and workshops for staff and parents and get-togethers are held in the Gamaliel Hall.
+		<!--<button id="angryFBtn">Open Game</button>
+
+                
+                <div id="angryFModal" class="angryFModal">
+
+                    
+                    <div class="angryFModal-content">
+                        <span class="angryFClose">&times;</span>
+                        <embed width="1600" height="800" style="border: 0px;" src="https://pennacap.github.io/Angry-Friends" />
+                    </div>
+                    
+                </div>-->
+            </div>
+            <div class="flexbox">
+                
+                <flex>Mackay Hall</flex><br />
+                <img src="Football.png" id="imgs" /><br />
+                The Mackay Hall, named after our first Principal Mr. Adam Mackay, was formerly the chapel. The Mackay Hall is fully air conditioned and is now equipped with multimedia facilities for the students. The hall is also utilized for meetings, presentations and curricular and co-curricular activities.
+<!--<button id="footballBtn">Open Game</button>
+
+                
+                <div id="footballModal" class="footballModal">
+
+                    
+                    <div class="footballModal-content">
+                        <span class="footballClose">&times;</span>
+                        <embed width="432" height="757" style="border: 0px;" src="https://studio.code.org/projects/gamelab/9ieHg8rh96dXL3Us8ISRIDOEhsIGyyX1IP4mYcXqJZ4/embed" />
+                    </div>
+                    
+                </div>-->
+            </div>
+            <div class="flexbox">
+                
+                <flex>Computer Labs</flex><br />
+                <img src="Bubble.png" id="imgs" /><br />
+		There are three computer laboratories for imparting basic computing skills to the primary and middle school students and basic computer programming to students of standards IX-XII. The subject Computer Studies is optional for students of standards IX-XII and compulsory for students of standards I-VIII.                
+<!--<button id="bubbleBtn">Open Game</button>
+
+                
+                <div id="bubbleModal" class="bubbleModal">
+
+                    
+                    <div class="bubbleModal-content">
+                        <span class="bubbleClose">&times;</span>
+                        <embed width="432" height="757" style="border: 0px;" src="https://pennacap.github.io/Bubble-Game/" />
+                    </div>
+                    
+                </div>-->
+            </div>
+            <div class="flexbox">
+                
+                <flex>Activity Room</flex><br />
+                <img src="Runcar.png" id="imgs" /><br />
+		The K.G. activity room, equipped with puzzles and blocks, gives children an interactive learning environment, which helps them develop hand-eye coordination and fine motor skills.<br /><br />
+The activity room for the ISC students has equipment for table tennis, chess and carrom.                
+<!--<button id="runcarBtn">Open Game</button>
+
+                
+                <div id="runcarModal" class="runcarModal">
+
+                    
+                    <div class="runcarModal-content">
+                        <span class="runcarClose">&times;</span>
+                        <embed width="800" height="800" style="border: 0px;" src="https://pennacap.github.io/p5.car-racer" />
+                    </div>
+                    
+                </div>-->
+            </div>
+            <div class="flexbox">
+                
+                <flex>Libraries</flex><br />
+                <img src="AngryB.png" id="imgs" /><br />
+The Libraries of the school are stocked with 30000 books of different genres. In addition e-books &#40;70000&#41; and audio visual CDs are made available to the students on personal computers.
+                <!--<button id="angryBBtn">Open Game</button>
+
+                
+                <div id="angryBModal" class="angryBModal">
+
+                    
+                    <div class="angryBModal-content">
+                        <span class="angryBClose">&times;</span>
+                        <embed width="800" height="800" style="border: 0px;" src="angryBirdsStage8.5/index.html" />
+                    </div>
+                    
+                </div>-->
+            </div>
+
+            <div class="flexbox">
+                
+                <flex>Remedial Department</flex><br />
+                <img src="Car.png" id="imgs" /><br />
+                This Remedial Department assists children who are identified with specific learning difficulties. With the help of special tools and aids, these students are assisted to cope with their work
+		<!--<button id="carBtn">Open Game</button>
+
+                
+                <div id="carModal" class="carModal">
+
+                    
+                    <div class="carModal-content">
+                        <span class="carClose">&times;</span>
+                        <embed width="800" height="800" style="border: 0px;" src="CarRacingStage2.5/index.html" />
+                    </div>
+                    
+                </div>-->
+            </div></div><br />
+       
+            
+          
+        
+        <script>
+            var trexModal = document.getElementById("trexModal");
+            var trexBtn = document.getElementById("trexBtn");
+            var trexClose = document.getElementsByClassName("trexClose")[0];
+
+            var ballMazeModal = document.getElementById("ballMazeModal");
+            var ballMazeBtn = document.getElementById("ballMazeBtn");
+            var ballMazeClose = document.getElementsByClassName("ballMazeClose")[0];
+
+            var pongModal = document.getElementById("pongModal");
+            var pongBtn = document.getElementById("pongBtn");
+            var pongClose = document.getElementsByClassName("pongClose")[0];
+
+            var ghostModal = document.getElementById("ghostModal");
+            var ghostBtn = document.getElementById("ghostBtn");
+            var ghostClose = document.getElementsByClassName("ghostClose")[0];
+
+            var ghostAIModal = document.getElementById("ghostAIModal");
+            var ghostAIBtn = document.getElementById("ghostAIBtn");
+            var ghostAIClose = document.getElementsByClassName("ghostAIClose")[0];
+
+            var angryFModal = document.getElementById("angryFModal");
+            var angryFBtn = document.getElementById("angryFBtn");
+            var angryFClose = document.getElementsByClassName("angryFClose")[0];
+
+            var footballModal = document.getElementById("footballModal");
+            var footballBtn = document.getElementById("footballBtn");
+            var footballClose = document.getElementsByClassName("footballClose")[0];
+
+            var bubbleModal = document.getElementById("bubbleModal");
+            var bubbleBtn = document.getElementById("bubbleBtn");
+            var bubbleClose = document.getElementsByClassName("bubbleClose")[0];
+
+            var runcarModal = document.getElementById("runcarModal");
+            var runcarBtn = document.getElementById("runcarBtn");
+            var runcarClose = document.getElementsByClassName("runcarClose")[0];
+
+            var uniCanvModal = document.getElementById("uniCanvModal");
+            var uniCanvBtn = document.getElementById("uniCanvBtn");
+            var uniCanvClose = document.getElementsByClassName("uniCanvClose")[0];
+
+            var surveyModal = document.getElementById("surveyModal");
+            var surveyBtn = document.getElementById("surveyBtn");
+            var surveyClose = document.getElementsByClassName("surveyClose")[0];
+
+            var angryBModal = document.getElementById("angryBModal");
+            var angryBBtn = document.getElementById("angryBBtn");
+            var angryBClose = document.getElementsByClassName("angryBClose")[0];
+
+            var carModal = document.getElementById("carModal");
+            var carBtn = document.getElementById("carBtn");
+            var carClose = document.getElementsByClassName("carClose")[0];
+
+            trexBtn.onclick = function () {
+                trexModal.style.display = "block";
+            }
+            trexClose.onclick = function () {
+                trexModal.style.display = "none";
+            }
+
+
+            pongBtn.onclick = function () {
+                pongModal.style.display = "block";
+            }
+            pongClose.onclick = function () {
+                pongModal.style.display = "none";
+            }
+
+
+            ballMazeBtn.onclick = function () {
+                ballMazeModal.style.display = "block";
+            }
+            ballMazeClose.onclick = function () {
+                ballMazeModal.style.display = "none";
+            }
+
+
+            ghostBtn.onclick = function () {
+                ghostModal.style.display = "block";
+            }
+            ghostClose.onclick = function () {
+                ghostModal.style.display = "none";
+            }
+
+
+            ghostAIBtn.onclick = function () {
+                ghostAIModal.style.display = "block";
+            }
+            ghostAIClose.onclick = function () {
+                ghostAIModal.style.display = "none";
+            }
+
+
+            angryFBtn.onclick = function () {
+                angryFModal.style.display = "block";
+            }
+            angryFClose.onclick = function () {
+                angryFModal.style.display = "none";
+            }
+
+
+            footballBtn.onclick = function () {
+                footballModal.style.display = "block";
+            }
+            footballClose.onclick = function () {
+                footballModal.style.display = "none";
+            }
+
+
+            bubbleBtn.onclick = function () {
+                bubbleModal.style.display = "block";
+            }
+            bubbleClose.onclick = function () {
+                bubbleModal.style.display = "none";
+            }
+
+
+            runcarBtn.onclick = function () {
+                runcarModal.style.display = "block";
+            }
+            runcarClose.onclick = function () {
+                runcarModal.style.display = "none";
+            }
+
+
+            uniCanvBtn.onclick = function () {
+                uniCanvModal.style.display = "block";
+            }
+            uniCanvClose.onclick = function () {
+                uniCanvModal.style.display = "none";
+            }
+
+
+            surveyBtn.onclick = function () {
+                surveyModal.style.display = "block";
+            }
+            surveyClose.onclick = function () {
+                surveyModal.style.display = "none";
+            }
+
+
+            angryBBtn.onclick = function () {
+                angryBModal.style.display = "block";
+            }
+            angryBClose.onclick = function () {
+                angryBModal.style.display = "none";
+            }
+
+
+            carBtn.onclick = function () {
+                carModal.style.display = "block";
+            }
+            carClose.onclick = function () {
+                carModal.style.display = "none";
+            }
+
+
+            window.onclick = function (event) {
+                if (event.target == pongModal) {
+                    pongModal.style.display = "none";
+                }
+                if (event.target == trexModal) {
+                    trexModal.style.display = "none";
+                }
+                if (event.target == ballMazeModal) {
+                    ballMazeModal.style.display = "none";
+                }
+                if (event.target == ghostModal) {
+                    ghostModal.style.display = "none";
+                }
+                if (event.target == ghostAIModal) {
+                    ghostAIModal.style.display = "none";
+                }
+                if (event.target == angryFModal) {
+                    angryFModal.style.display = "none";
+                }
+                if (event.target == footballModal) {
+                    footballModal.style.display = "none";
+                }
+                if (event.target == bubbleModal) {
+                    bubbleModal.style.display = "none";
+                }
+                if (event.target == runcarModal) {
+                    runcarModal.style.display = "none";
+                }
+                if (event.target == uniCanvModal) {
+                    uniCanvModal.style.display = "none";
+                }
+                if (event.target == surveyModal) {
+                    surveyModal.style.display = "none";
+                }
+                if (event.target == carModal) {
+                    carModal.style.display = "none";
+                }
+            }
+        </script>
+        
+        <br />
+        <br />
+        <program>Clubs</program>
+	<br /><hr /><br />
+        
+        <div class="flex-container">
+            <div class="flexbox">
+                <flex>Girl Guides</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Aero Modelling</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Chess Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Interact Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Nature Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Readers Club</flex>
+		<img src="#" id="imgs"/>
+            </div> 
+	    <div class="flexbox">
+                <flex>School Band</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>UNESCO Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Adventure Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Brain Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>IAYP Programme</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Literary and Debating Society</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Numismatics Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Science Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Wall Paper Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+	    <div class="flexbox">
+                <flex>Rifle Club</flex>
+		<img src="#" id="imgs"/>
+            </div>
+            
+        </div>
+        <footer id="footer"></footer>
+    </body>
+</html>
