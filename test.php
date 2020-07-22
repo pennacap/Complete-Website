@@ -70,32 +70,39 @@ a {
 <body>
 <?php
 // define variables and set to empty values
-$email = $pswrepeat = $psw= $pswErr= $emiErr= "";
+$found = $memEmail = $memPsw = $email = $psw= $pswErr= $emiErr= "";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
   $email = test_input($_POST["email"]);
   
-  if (test_input($_POST["psw"]) === test_input($_POST["psw-repeat"])) {
+  
 	$psw = test_input($_POST["psw"]);
-  $pswrepeat = test_input($_POST["psw-repeat"]);
+  
 	if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-  $emailErr = "Invalid email format";
+  $emiErr = "Invalid email format";
 	}
 // Check connection
 //if (!$conn) {
 //  die("Connection failed: " . mysqli_connect_error());
 //}
 //echo "Connected successfully";
-	//$myfile = fopen("_credentials.txt", "a+");
-	//fwrite($myfile, $email."\n");
-	//fwrite($myfile, $psw."\n");
-	//fclose($myfile);
+	if ($pswErr!="" && $emiErr != ""){ 
+	$myfile = fopen(".htcredentials.txt", "r");
+	$contents = fread($myfile, filesize(".htcredentials.txt"));
+	fwrite($myfile, $psw."\n");
+	fclose($myfile);
+	$contents=str_split("\n",$contents);
+	foreach($contents as $x){
+	     $y = split(", ",$x);
+	     if ($email == $y[0] && $psw == $y[1]){
+		echo "<script type=\"text/javascript\">location.href = '/';</script>";
+	     } 
+	     else {
+		$pswErr = "Either the username or password is incorrect";
+	     }	
+	}
 
-}
-  } else {
-     $pswErr = "Password is required";
-  }
-
+}}
 function test_input($data) {
   $data = trim($data);
   $data = stripslashes($data);
@@ -106,27 +113,20 @@ function test_input($data) {
 <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
   <div class="container">
     <h1>Register</h1>
-    <p>Please fill in this form to create an account.</p>
+    <p>Its a work in progress...Please fill in this form to signin.(Use dummyaccount@example.com and password123)</p>
     <hr>
 
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
-    <span class="error"><?php echo $emiErr;?></span>
+    <span class="error"><?php echo $emiErr;?></span><br /><br />
     <label for="psw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-
-    <label for="psw-repeat"><b>Repeat Password</b></label>
-    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-    <span class="error"><?php echo $pswErr;?></span>
-    <hr>
-    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-
-    <button type="submit" class="registerbtn">Register</button>
+   <span class="error"><?php echo $pswErr;?></span><br /><br /> 
+   <button type="submit" class="registerbtn">Sign in</button>
+    
   </div>
   
-  <div class="container signin">
-    <p>Already have an account? <a href="#">Sign in</a>.</p>
-  </div>
+  
 </form>
 
 
